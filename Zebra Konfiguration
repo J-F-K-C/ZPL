@@ -1,0 +1,27 @@
+## Dem Drucker eine Datei mit folgendem Inhalt senden (Entweder über die Druckeroptionen, oder den Punkt "Communication" in den Zebra Tools)
+
+^XA
+^ND2,P,192.168.1.11,255.255.255.0,192.168.1.254
+^NBC
+^NC1
+^NPP
+^NNETI
+^XZ
+^XA
+^JUS
+^XZ
+
+## Die IPs entsprechend gegen eigene IP Adressen austauschen
+## Den Hostnamen hinter ^NN auf einen eigenen Hostname setzen (in diesem Fall ist der Hostname ETI)
+
+## Anschließend mit dem Befehl 
+
+~JR 
+
+##den Drucker neustarten
+
+## Über den Befehl
+
+~WL
+
+## Kann ein Etikett mit den aktuellen Netzwerkeinstellungen gedruckt werden
